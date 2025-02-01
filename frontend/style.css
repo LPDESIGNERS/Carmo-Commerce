@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000; /* Texto preto */
+}
+
+header {
+    background-color: #ff0000; /* Vermelho do McDonald's */
+    color: #ffcc00; /* Amarelo do McDonald's */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #ff0000; /* Vermelho do McDonald's */
+}
+
+#lista-empresas, #lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.empresa, .produto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fundo branco */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.empresa:hover, .produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.produto {
+    width: calc(25% - 40px);
+}
+
+.empresa h3, .produto h3 {
+    color: #ff0000; /* Vermelho do McDonald's */
+    margin: 0 0 10px;
+}
+
+.empresa p, .produto p {
+    color: #000000; /* Texto preto */
+    margin: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #ff0000; /* Vermelho do McDonald's */
+}
+
+input, select, button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+button {
+    background-color: #ffcc00; /* Amarelo do McDonald's */
+    color: #000000; /* Texto preto */
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ff9900; /* Amarelo mais escuro no hover */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff0000; /* Vermelho do McDonald's */
+    color: #ffcc00; /* Amarelo do McDonald's */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o campo de troco */
+#troco {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}

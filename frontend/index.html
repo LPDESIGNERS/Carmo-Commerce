@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Carmo Commerce</h1>
+        <p>Encontre os melhores estabelecimentos da sua cidade!</p>
+    </header>
+
+    <section id="empresas">
+        <h2>Empresas Cadastradas</h2>
+        <div id="lista-empresas">
+            <!-- Empresas serão carregadas aqui via JavaScript -->
+        </div>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos</h2>
+        <div id="lista-produtos">
+            <!-- Produtos serão carregados aqui via JavaScript -->
+        </div>
+    </section>
+
+    <section id="pedido">
+        <h2>Faça seu Pedido</h2>
+        <form id="formulario-pedido">
+            <label for="endereco">Endereço de Entrega:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="pagamento">Forma de Pagamento:</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="cartao">Cartão</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="pix">PIX</option>
+            </select>
+
+            <div id="troco" style="display: none;">
+                <label for="valor-troco">Precisa de troco para quanto?</label>
+                <input type="number" id="valor-troco" name="valor-troco">
+            </div>
+
+            <button type="submit">Finalizar Pedido</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Delivery Local</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
